@@ -1,0 +1,149 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+    /* Primary Colors */
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+
+    /* Neutral Colors */
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--dark-blue);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main {
+    position: relative;
+    margin-top: -6.9em;
+    background-color: var(--dark-grayish-blue);
+    width: 21.46em;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2.5em 1.6em;
+}
+
+
+main h3 {
+    color: var(--neon-green);
+    font-size: .7rem;
+    letter-spacing: .21rem;
+    margin-bottom: 2.15em;
+}
+
+main .advice-text {
+    font-size: 1.46rem;
+    color: var(--light-cyan);
+    line-height: 2.07rem;
+    margin-bottom: 1em;
+}
+
+
+main .pattern-divider {
+    background: url('images/pattern-divider-mobile.svg') center center / cover no-repeat;
+    display: block;
+    width: 100%;
+    height: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em;
+}
+
+main .bkc-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: var(--neon-green);
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    bottom: -10%;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+
+main .bkc-icon:hover {
+    -webkit-box-shadow: 0 0 2em 0 var(--neon-green);
+    box-shadow: 0 0 2em 0 var(--neon-green);
+}
+
+
+@media screen and (min-width: 1440px) {
+    html {
+        font-size: 19px;
+    }
+
+    main {
+        width: 28.5em;
+        margin-top: -1.8em;
+        border-radius: 1rem;
+        padding: 2.55em 2.5em;
+    }
+
+    main h3 {
+        margin-bottom: 1.65em;
+    }
+
+    main .advice-text {
+        margin-bottom: 1.4em;
+    }
+
+    main .pattern-divider {
+        background: url('images/pattern-divider-desktop.svg') center center / cover no-repeat;
+        width: 23.4em;
+        height: .85em;
+    }
+
+
+    main .bkc-icon {
+        width: 3.4em;
+        height: 3.4em;
+    }
+}
