@@ -48,7 +48,6 @@ body {
 
 main {
     position: relative;
-    margin-top: -6.9em;
     background-color: var(--dark-grayish-blue);
     width: 21.46em;
     border-radius: 10px;
