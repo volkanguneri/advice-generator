@@ -1,7 +1,7 @@
 // variables
 
-let adviceNumber = document.getElementById('advice-number');
-let adviceText = document.getElementById('advice-text');
+const adviceNumber = document.getElementById('advice-number');
+const adviceText = document.getElementById('advice-text');
 const btn = document.getElementById('bkc-icon');
 
 
